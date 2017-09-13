@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Classes</title>
+        <title>Album</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSS -->
@@ -20,48 +20,60 @@
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="classes.html">Classes</a></li>
-                    <li><a href="album.html">Album</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li class="active"><a href="album.html">Album</a></li>
                     <li><a href="myAccount.html">My Account</a></li>
                 </ul>
             </div>
         </nav>
-
         <div class="row">
+        <h1 class="text-center title">Photo Album</h1>
+        </div>
+        <div class="row">
+
             <!-- VERTICAL NAVBAR -->
                 <!-- Needs to be fixed on the left outside of the main container -->
                 <!-- Does not scroll with the page -->
                 <!-- Will jump through the current page to specific anchors -->
             <div class="col-sm-3">
-<<<<<<< HEAD
             <div class="list-group vertLeftNav">
-=======
-            <div class="list-group" id="vertLeftNav">
->>>>>>> bc7c7148a1459886703e8f451301d2edfdfd275a
-                <button type="button" class="list-group-item" id="youngChildren">Young Children</button>
-                    <!-- link to  -->
-                <button type="button" class="list-group-item" id="preteenTeen">Preteen &amp; Teen</button>
-                    <!--  -->
-                <button type="button" class="list-group-item" id="adult">Adult</button>
-                    <!--  -->
-                <button type="button" class="list-group-item">Terminology</button>
-                    <!--  -->
+                <button type="button" class="list-group-item">Student Accomplishments</button>
+                <button type="button" class="list-group-item">Photos</button>
+                <button type="button" class="list-group-item">Videos</button>
+                <button type="button" class="list-group-item">Community</button>
                 <button type="button" class="list-group-item">FAQ</button>
-                    <!--  -->
             </div>
             </div>
+
 
             <!-- MAIN CONTENT CONTAINER -->
                 <!-- Content depends on the page -->
             <div class="col-sm-6">
-                <h1>Page Title</h1>
-                <div id="container">
+                <div class="panel-group" id="container">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
+                            <h3 class="panel-title" id="panelTitle">2017 Spring Show</h3>
+                            <p>Congratulations to all our girls for putting on a wonderful spring show! </p>
                         </div>
-                        <div class="panel-body">
-                        Panel content
+                        <div class="panel-body" id="panelContent">
+                        <!-- images added here via jquery -->
+                            <img src="https://media3.giphy.com/media/Ez1XmttaHzjQ4/200w.gif" alt="graceful pirouette gif" />
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" id="panelTitle">
+                            <a data-toggle="collapse" href="#collapse1">2016 Winter Show</a>
+                            </h3>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <img src="https://media3.giphy.com/media/V6VC2nT8lUhEY/200w.gif" alt="three ballerinas gif" />
+                            </div>
+                            <div class="panel-footer">
+                            This year's performance at Santa's was very well received. I am so proud of them.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,34 +81,29 @@
 
 
             <!-- CONTACT US -->
-                <!-- Copyright / Contact Info -->
-<<<<<<< HEAD
+            <!-- Copyright / Contact Info -->
             <div class="col-sm-3 vertRightContent">
-                <a href="https://www.facebook.com" id="FBlogo">facebook logo</a>
-=======
-            <div class="col-sm-3" id="vertRightContent">
-                <a href=""><img src="images/FB-fLogo-Blue-broadcast-2.png" alt="facebook logo" id="FBlogo" /></a>Like us on Facebook!
+                <div class="vertRightContent">
+                    <a href=""><img src="images/FB-fLogo-Blue-broadcast-2.png" alt="facebook logo" id="FBlogo" /></a>
+                    Like us on Facebook!
+                </div>
                 <br>
                 <br>
->>>>>>> bc7c7148a1459886703e8f451301d2edfdfd275a
-                <div id="googleMap">
+                <div class="vertRightContent" id="googleMap">
                     google map API call
                 </div>
                 <br>
-                <address>
-                <b>Arabesque Studio of the Dance</b><br>
-                7989 Beltline Road<br>
-                Suite #176 <br>
-                Dallas, Texas 75248 <br>
-                (Northwest Corner Coit &amp; Beltline)<br>
-                <a href="tel://972332532">972-233-2532</a>
+                <address class="vertRightContent">
+                    <b>Arabesque Studio of the Dance</b><br>
+                    7989 Beltline Road<br>
+                    Suite #176 <br>
+                    Dallas, Texas 75248 <br>
+                    (Northwest Corner Coit &amp; Beltline)<br>
+                    <a href="tel://972332532" id="phoneNum">972-233-2532</a>
                 </address>
             </div>
 
-<<<<<<< HEAD
-=======
 
->>>>>>> bc7c7148a1459886703e8f451301d2edfdfd275a
         </div>
 
     <!-- JQUERY -->
