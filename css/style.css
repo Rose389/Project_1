@@ -5,6 +5,7 @@ body {
 }
 
 address {
+	width: 90%;
 	color: #fff;
 }
 
@@ -24,11 +25,13 @@ address {
 .vertLeftNav {
 	width: 90%;
 	margin: auto;
+	margin-right: 0;
 }
 
 .vertRightContent {
 	width: 90%;
 	margin: auto;
+	margin-left: 0;
 }
 
 #FBlogo {
@@ -36,7 +39,6 @@ address {
 }
 
 #googleMap {
-	margin: auto;
 	background-color: #fff;
 	width: 90%;
 	height: 15em;
