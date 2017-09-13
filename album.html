@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Andrea's Dance Studio</title>
+        <title>Album</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSS -->
@@ -19,9 +19,9 @@
                     <a class="navbar-brand" href="#">Andrea's Dance Studio</a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="classes.html">Classes</a></li>
-                    <li><a href="album.html">Album</a></li>
+                    <li class="active"><a href="album.html">Album</a></li>
                     <li><a href="myAccount.html">My Account</a></li>
                 </ul>
             </div>
@@ -32,14 +32,12 @@
                 <!-- Needs to be fixed on the left outside of the main container -->
                 <!-- Does not scroll with the page -->
                 <!-- Will jump through the current page to specific anchors -->
-            <div class="col-sm-3">
-            <div class="list-group" id="vertLeftNav">
-                <button type="button" class="list-group-item">About Us</button>
-                <button type="button" class="list-group-item">Why Dance</button>
-                <button type="button" class="list-group-item">Customer Thoughts</button>
+            <div class="col-sm-3 list-group">
+                <button type="button" class="list-group-item">Student Accomplishments</button>
+                <button type="button" class="list-group-item">Photos</button>
+                <button type="button" class="list-group-item">Videos</button>
                 <button type="button" class="list-group-item">Community</button>
                 <button type="button" class="list-group-item">FAQ</button>
-            </div>
             </div>
 
 
@@ -47,26 +45,17 @@
                 <!-- Content depends on the page -->
             <div class="col-sm-6">
                 <h1>Page Title</h1>
-                <div id="container">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
-                        </div>
-                        <div class="panel-body">
-                        Panel content
-                        </div>
-                    </div>
+                <div>
+                    Main Content
                 </div>
             </div>
 
 
             <!-- CONTACT US -->
                 <!-- Copyright / Contact Info -->
-            <div class="col-sm-3" id="vertRightContent">
-                <a href=""><img src="images/FB-fLogo-Blue-broadcast-2.png" alt="facebook logo" id="FBlogo" /></a>Like us on Facebook!
-                <br>
-                <br>
-                <div id="googleMap">
+            <div class="col-sm-3">
+                <a href="">facebook logo</a>
+                <div>
                     google map API call
                 </div>
                 <br>

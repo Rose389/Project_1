@@ -1,0 +1,39 @@
+body {
+	background-color: black;
+	background-image: url("../images/dark_wood.png");
+	color: white ;
+}
+
+address {
+	color: white;
+}
+
+.active {
+
+}
+
+.navbar {
+	background-color: black;
+	color: #fff;
+	border: none;
+}
+
+.vertLeftNav {
+	width: 90%;
+	margin: auto;
+}
+
+.vertRightContent {
+	width: 90%;
+	margin: auto;
+}
+
+#FBlogo {
+	width: 50px;
+}
+
+#googleMap {
+	background-color: white;
+	width: 90%;
+	height: 15em;
+}
