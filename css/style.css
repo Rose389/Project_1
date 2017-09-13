@@ -1,19 +1,22 @@
 body {
-	background-color: black;
+	background-color: #000;
 	background-image: url("../images/dark_wood.png");
-	color: white ;
+	color: #fff ;
 }
 
 address {
-	color: white;
+	color: #fff;
 }
 
 .active {
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
 
 }
 
 .navbar {
-	background-color: black;
+	background-color: #000;
 	color: #fff;
 	border: none;
 }
@@ -33,7 +36,12 @@ address {
 }
 
 #googleMap {
-	background-color: white;
+	margin: auto;
+	background-color: #fff;
 	width: 90%;
 	height: 15em;
+}
+
+#phoneNum {
+	color: #fff;
 }

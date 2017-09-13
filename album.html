@@ -26,48 +26,83 @@
                 </ul>
             </div>
         </nav>
-
         <div class="row">
+        <h1 class="text-center title">Photo Album</h1>
+        </div>
+        <div class="row">
+
             <!-- VERTICAL NAVBAR -->
                 <!-- Needs to be fixed on the left outside of the main container -->
                 <!-- Does not scroll with the page -->
                 <!-- Will jump through the current page to specific anchors -->
-            <div class="col-sm-3 list-group">
+            <div class="col-sm-3">
+            <div class="list-group vertLeftNav">
                 <button type="button" class="list-group-item">Student Accomplishments</button>
                 <button type="button" class="list-group-item">Photos</button>
                 <button type="button" class="list-group-item">Videos</button>
                 <button type="button" class="list-group-item">Community</button>
                 <button type="button" class="list-group-item">FAQ</button>
             </div>
+            </div>
 
 
             <!-- MAIN CONTENT CONTAINER -->
                 <!-- Content depends on the page -->
             <div class="col-sm-6">
-                <h1>Page Title</h1>
-                <div>
-                    Main Content
+                <div class="panel-group" id="container">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" id="panelTitle">2017 Spring Show</h3>
+                            <p>Congratulations to all our girls for putting on a wonderful spring show! </p>
+                        </div>
+                        <div class="panel-body" id="panelContent">
+                        <!-- images added here via jquery -->
+                            <img src="https://media3.giphy.com/media/Ez1XmttaHzjQ4/200w.gif" alt="graceful pirouette gif" />
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" id="panelTitle">
+                            <a data-toggle="collapse" href="#collapse1">2016 Winter Show</a>
+                            </h3>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <img src="https://media3.giphy.com/media/V6VC2nT8lUhEY/200w.gif" alt="three ballerinas gif" />
+                            </div>
+                            <div class="panel-footer">
+                            This year's performance at Santa's was very well received. I am so proud of them.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
             <!-- CONTACT US -->
-                <!-- Copyright / Contact Info -->
-            <div class="col-sm-3">
-                <a href="">facebook logo</a>
-                <div>
+            <!-- Copyright / Contact Info -->
+            <div class="col-sm-3 vertRightContent">
+                <div class="vertRightContent">
+                    <a href=""><img src="images/FB-fLogo-Blue-broadcast-2.png" alt="facebook logo" id="FBlogo" /></a>
+                    Like us on Facebook!
+                </div>
+                <br>
+                <br>
+                <div class="vertRightContent" id="googleMap">
                     google map API call
                 </div>
                 <br>
-                <address>
-                <b>Arabesque Studio of the Dance</b><br>
-                7989 Beltline Road<br>
-                Suite #176 <br>
-                Dallas, Texas 75248 <br>
-                (Northwest Corner Coit &amp; Beltline)<br>
-                <a href="tel://972332532">972-233-2532</a>
+                <address class="vertRightContent">
+                    <b>Arabesque Studio of the Dance</b><br>
+                    7989 Beltline Road<br>
+                    Suite #176 <br>
+                    Dallas, Texas 75248 <br>
+                    (Northwest Corner Coit &amp; Beltline)<br>
+                    <a href="tel://972332532" id="phoneNum">972-233-2532</a>
                 </address>
             </div>
+
 
         </div>
 

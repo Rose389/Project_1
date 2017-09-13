@@ -26,13 +26,16 @@
                 </ul>
             </div>
         </nav>
-
+        <div class="row text-center">
+            <h1>Page Title</h1>
+        </div>
         <div class="row">
             <!-- VERTICAL NAVBAR -->
                 <!-- Needs to be fixed on the left outside of the main container -->
                 <!-- Does not scroll with the page -->
                 <!-- Will jump through the current page to specific anchors -->
-            <div class="col-sm-3 list-group">
+            <div class="col-sm-3">
+            <div class="list-groupb vertLeftNav">
                 <button type="button" class="list-group-item">Register</button>
                 <button type="button" class="list-group-item">Shoes</button>
                 <button type="button" class="list-group-item">Leotards &amp; Tights</button>
@@ -40,32 +43,45 @@
                 <button type="button" class="list-group-item">Miscellaneous</button>
                 <button type="button" class="list-group-item">FAQ</button>
             </div>
+            </div>
 
 
             <!-- MAIN CONTENT CONTAINER -->
                 <!-- Content depends on the page -->
             <div class="col-sm-6">
-                
+                <div id="container">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                        Panel content
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
-            <!-- CONTACT US -->
+           <!-- CONTACT US -->
                 <!-- Copyright / Contact Info -->
-            <div class="col-sm-3">
-                <a href="">facebook logo</a>
+            <div class="col-sm-3 vertRightContent">
                 <div id="googleMap">
                     google map API call
                 </div>
                 <br>
-                <address>
+                <address class="text-right vertRightContent">
                 <b>Arabesque Studio of the Dance</b><br>
                 7989 Beltline Road<br>
                 Suite #176 <br>
                 Dallas, Texas 75248 <br>
                 (Northwest Corner Coit &amp; Beltline)<br>
-                <a href="tel://972332532">972-233-2532</a>
+                <a href="tel://972332532" id="phoneNum">972-233-2532</a>
                 </address>
+                <br>
+                <a href=""><img src="images/FB-fLogo-Blue-broadcast-2.png" alt="facebook logo" id="FBlogo" /></a>Like us on Facebook!
+                <br>
             </div>
+
 
         </div>
 
