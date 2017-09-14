@@ -1,34 +1,49 @@
 // -- VARIABLES -- //
     var subNavObjArray = {
         home: {
-            
+            subnav0: 'About Us',
+            subnav1: 'Why Dance',
+            subnav2: 'Customer Thoughts',
+            subnav3: 'Community',
+            subnav4: 'Terminology',
+            subnav5: 'FAQ'
         },
         classes: {
-
+            subnav0: 'Young Children',
+            subnav1: 'Preteens & Teens',
+            subnav2: 'Adults',
+            subnav3: 'Charm',
+            subnav4: 'Dress Code',
+            subnav5: 'Performance',
+            subnav6: 'Policies'
         },
         album: {
-
+            subnav0: 'Photos',
+            subnav2: 'Student Accomplishments',
+            subnav3: 'Videos'
         },
         myAcct: {
-
-        },
-        contact: {
-
+            subnav0: 'Register',
+            subnav1: 'Shoes',
+            subnav2: 'Leotards & Tights',
+            subnav3: 'Dance Bags',
+            subnav4: 'Miscellaneous'
         }
     };
 
 // -- FIREBASE -- //
-    var config = {
-        apiKey: "AIzaSyBDk0aru8IkIQsTUQ1uQRYS7SutJrEXjVI",
-        authDomain: "boot-proj-1.firebaseapp.com",
-        databaseURL: "https://boot-proj-1.firebaseio.com",
-        projectId: "boot-proj-1",
-        storageBucket: "",
-        messagingSenderId: "444510611307"
-    };
-    firebase.initializeApp(config);
+    // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBDk0aru8IkIQsTUQ1uQRYS7SutJrEXjVI",
+            authDomain: "boot-proj-1.firebaseapp.com",
+            databaseURL: "https://boot-proj-1.firebaseio.com",
+            projectId: "boot-proj-1",
+            storageBucket: "",
+            messagingSenderId: "444510611307"
+        };
+        firebase.initializeApp(config);
 
-    // -- ON PAGE LOAD - PULL DATA FROM FIREBASE -- //
+    // Update Firebase Data
         var database = firebase.database();
         database.ref().on("value", function(snapshot){
             // Do Something
@@ -36,25 +51,18 @@
             console.log("The read failed: " + error.code);
         });
 
-function loadSubNav (){                                             // Dynamically generate sub-nav buttons
-    var navName = $(this).attr('data-name');
-    $("#sub-nav").empty();
-    var tBody = $("<tbody>");
-    for (var p = 0; p < subNavObjArray.length; p++) {
-        var tRow = $("<tr>");
-        var tData = $("<td>");
-            // Put the text into the table row
-        tRow.append(tData);
-        tBody.append(tRow);
-    }
-    $('#sub-nav').append(tBody);
-}
-
-$("#videos-btn").click(function(){                                  // Switch the image gallery out for embedded YT vid
+//-- MISC FUNCTIONS --//
+    // 
     
-})
 
-$(document).on("click", ".main-nav-btns", loadSubNav);             // When a master nav (top bar) is clicked, regen the subnav
+//-- CLICK LISTENERS --//
+    // Album Page - Switches out image gallery for YT Video embed
+        $("#videos-btn").click(function(){
+            
+        });
+
+    // Main Navbar Buttons
+        $(document).on("click", ".main-nav-btns", loadSubNav);
 
 //-- API CODE --//
     // Facebook
@@ -79,13 +87,3 @@ $(document).on("click", ".main-nav-btns", loadSubNav);             // When a mas
     // Google Maps
         // KEY: AIzaSyDa5axavfiocQ69O1zpMUGvcs9QjsgQWI8
         // Link: https://developers.google.com/maps/documentation/javascript/
-
-    // FileStack
-        var fileStackClient = filestack.init('AcZk1k36RmqiIjOZMdj0jz');
-        function showPicker() {
-            fileStackClient.pick({
-            }).then(function(result) {
-                console.log(JSON.stringify(result.filesUploaded))
-            });
-        }
-        // <input type="button" value="Upload" onclick="showPicker()" />

@@ -20,10 +20,9 @@
 * ON LOAD: 	Class Schedule Page
 * CONTENT:	Simple schedule with class times
 * SUB-NAV:	
-	* Class Schedule: (MENU)
-		* Young Children (`class-young.html`)
-		* Preteen &amp; Teen (`class-teens.html`)
-		* Adult (`class-adult.html`)
+	* Young Children (`class-young.html`)
+	* Preteen &amp; Teen (`class-teens.html`)
+	* Adult (`class-adult.html`)
 	* Charm (`class-charm.html`)
 	* Dress Code (`class-dressCode.html`)
 	* Performance (`class-performance.html`)
