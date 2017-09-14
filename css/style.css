@@ -10,7 +10,7 @@
 		color: #fff ;
 	}
 
-/* NAVBAR */
+/* MAIN NAVBAR */
 	.active {
 		background-color: #fff;
 		color: #000;
@@ -24,6 +24,15 @@
 	}
 
 /* MAIN CONTENT ROW */
+	a.list-group-item.active{
+		background-color: gray;
+		border: none;
+	}
+
+	a.list-group-item.active:hover{
+		background-color: #AFAFAF;
+	}
+	
 	#sub-nav {
 		color: black;
 	}
