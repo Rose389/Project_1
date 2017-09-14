@@ -3,7 +3,6 @@
 [GitHub Pages Link](https://rose389.github.io/Project_1/)
 
 ### Rough Sketch
-
 ![Rough Sketch](images/HTML-Design.jpg)
 
 ### Page One: Landing Page
