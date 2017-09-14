@@ -1,5 +1,7 @@
 # Project_1
 
+[GitHub Pages Link](https://rose389.github.io/Project_1/)
+
 ### Page One: Landing Page
 * ON LOAD: 	Large Image + Enter Site Button (Hides Big Image and Button - Loads Welcome/News)
 * CONTENT: 	Welcome, News
