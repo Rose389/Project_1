@@ -4,7 +4,7 @@
 
 ### Rough Sketch
 
-![Sketch](./images/HTML-Design.jpg)
+[Sketch](images/HTML-Design.jpg)
 
 ### Page One: Landing Page
 * ON LOAD: 	Large Image + Enter Site Button (Hides Big Image and Button - Loads Welcome/News)
