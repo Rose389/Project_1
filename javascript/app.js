@@ -48,7 +48,7 @@ function loadSubNav (){                                             // Dynamical
 }
 
 $("#videos-btn").click(function(){                                  // Switch the image gallery out for embedded YT vid
-
+    
 })
 
 $(document).on("click", ".main-nav-btns", loadSubNav);             // When a master nav (top bar) is clicked, regen the subnav
