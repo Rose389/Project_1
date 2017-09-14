@@ -1,49 +1,45 @@
-body {
-	background-color: #000;
-	background-image: url("../images/dark_wood.png");
-	color: #fff ;
-}
+/* AFFECTS WHOLE PAGE */
+	.custom-container{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 
-address {
-	width: 90%;
-	color: #fff;
-}
+	body {
+		background-color: #000;
+		background-image: url("../images/dark_wood.png");
+		color: #fff ;
+	}
 
-.active {
-	background-color: #fff;
-	color: #000;
-	font-weight: bold;
+/* NAVBAR */
+	.active {
+		background-color: #fff;
+		color: #000;
+		font-weight: bold;
+	}
 
-}
+	.navbar {
+		background-color: #000;
+		color: #fff;
+		border: none;
+	}
 
-.navbar {
-	background-color: #000;
-	color: #fff;
-	border: none;
-}
+/* MAIN CONTENT ROW */
+	#sub-nav {
+		color: black;
+	}
 
-.vertLeftNav {
-	width: 90%;
-	margin: auto;
-	margin-right: 0;
-}
+	#right-sidebar {
 
-.vertRightContent {
-	width: 90%;
-	margin: auto;
-	margin-left: 0;
-}
+	}
 
-#FBlogo {
-	width: 50px;
-}
+/* FOOTER */
+	#address {
+		float:right;
+	}
 
-#googleMap {
-	background-color: #fff;
-	width: 90%;
-	height: 15em;
-}
-
-#phoneNum {
-	color: #fff;
-}
+	#google-maps {
+		float: left;
+		background-color: #fff;
+		width: 100px;
+		height: 100px;
+	}

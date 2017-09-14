@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My Account</title>
+        <title>Andrea's Dance Studio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSS -->
@@ -10,9 +10,7 @@
             <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <!-- HORIZONTAL NAVBAR -->
-            <!-- Collapsable NavBar -->
-            <!-- Minimal button categories -->
+    <!-- HORIZONTAL NAVBAR -->
         <nav class="navbar navbar-default"  role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -26,69 +24,71 @@
                 </ul>
             </div>
         </nav>
-        <div class="row text-center">
-            <h1>Page Title</h1>
-        </div>
-        <div class="row">
+    <!-- CUSTOM CONTAINER CLASS TO KEEP THE RIGHT AND LEFT SIDES OFF THE EDGE OF THE WINDOW -->
+        <div class='custom-container'>
+            <div class="row text-center">
+                <h1>Page Title</h1>
+            </div>
+            <div class="row">
             <!-- VERTICAL NAVBAR -->
-                <!-- Needs to be fixed on the left outside of the main container -->
-                <!-- Does not scroll with the page -->
-                <!-- Will jump through the current page to specific anchors -->
-            <div class="col-sm-3">
-            <div class="list-groupb vertLeftNav">
-                <button type="button" class="list-group-item">Register</button>
-                <button type="button" class="list-group-item">Shoes</button>
-                <button type="button" class="list-group-item">Leotards &amp; Tights</button>
-                <button type="button" class="list-group-item">Dance Bags</button>
-                <button type="button" class="list-group-item">Miscellaneous</button>
-                <button type="button" class="list-group-item">FAQ</button>
-            </div>
-            </div>
+                <div class="col-sm-2">
+                    <div class="panel panel-default">
+                        <table class="table" id='sub-nav'>  <!-- #sub-nav will be JavaScript's hook to update sub-nav -->
+                            <tbody>
+                                <tr><td>This is just</td></tr>
+                                <tr><td>filler text for the</td></tr>
+                                <tr><td>sub-nav. Javascript</td></tr>
+                                <tr><td>Will build this</td></tr>
+                                <tr><td>dynamically.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-
-            <!-- MAIN CONTENT CONTAINER -->
-                <!-- Content depends on the page -->
-            <div class="col-sm-6">
-                <div id="container">
+            <!-- MAIN CONTENT -->
+                <div class="col-sm-8" id="main-content">    <!-- #main-content -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
+                            <h3 class="panel-title">Panel title</h3>
                         </div>
                         <div class="panel-body">
-                        Panel content
+                            Panel content
                         </div>
                     </div>
                 </div>
-            </div>
 
-
-           <!-- CONTACT US -->
-                <!-- Copyright / Contact Info -->
-            <div class="col-sm-3 vertRightContent">
-                <div id="googleMap">
-                    google map API call
+            <!-- SOCIAL MEDIA -->
+                <div class="col-sm-2" id="right-sidebar">   <!-- #right-sidebar -->
+                    Find us On
+                    <hr>
+                    <a href="">
+                        <img src="images/FB-fLogo-Blue-broadcast-2.png" alt="facebook logo" id="FBlogo" width='50px' height='50px' />
+                    </a>
+                    Facebook
                 </div>
-                <br>
-                <address class="text-right vertRightContent">
-                <b>Arabesque Studio of the Dance</b><br>
-                7989 Beltline Road<br>
-                Suite #176 <br>
-                Dallas, Texas 75248 <br>
-                (Northwest Corner Coit &amp; Beltline)<br>
-                <a href="tel://972332532" id="phoneNum">972-233-2532</a>
-                </address>
-                <br>
-                <a href=""><img src="images/FB-fLogo-Blue-broadcast-2.png" alt="facebook logo" id="FBlogo" /></a>Like us on Facebook!
-                <br>
+
+            </div> <!-- End of Main Content Row -->
+        </div> <!-- End of Custom Container -->
+
+    <!-- FOOTER / CONTACT US -->
+        <div class="footer navbar-fixed-bottom">
+            <div class='container'>
+                <div id='google-maps'>                      <!-- #google-maps -->
+                    <a href='#'>google map API call</a>
+                </div>
+                <div class="text-right" id='address'>       <!-- #address -->
+                    <b>Arabesque Studio of the Dance</b><br>
+                    7989 Beltline Road<br>
+                    Suite #176 <br>
+                    Dallas, Texas 75248 <br>
+                    (Northwest Corner Coit &amp; Beltline)<br>
+                    <a href="tel://972332532">972-233-2532</a>
+                </div>
             </div>
-
-
         </div>
 
     <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!-- MOMENT.JS -->
-        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- FIREBASE -->
         <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <!-- JAVASCRIPT -->

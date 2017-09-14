@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Classes</title>
+        <title>Andrea's Dance Studio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSS -->
@@ -24,57 +24,66 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="row">
-        <!-- VERTICAL NAVBAR -->
-            <div class="col-sm-3">
-                <div class="list-group" id="vertLeftNav">
-                    <button type="button" class="list-group-item" id="youngChildren">Young Children</button>
-                        <!-- link to  -->
-                    <button type="button" class="list-group-item" id="preteenTeen">Preteen &amp; Teen</button>
-                        <!--  -->
-                    <button type="button" class="list-group-item" id="adult">Adult</button>
-                        <!--  -->
-                    <button type="button" class="list-group-item">Terminology</button>
-                        <!--  -->
-                    <button type="button" class="list-group-item">FAQ</button>
-                        <!--  -->
-                </div>
-            </div>
-
-        <!-- MAIN CONTENT CONTAINER -->
-            <div class="col-sm-6">
+    <!-- CUSTOM CONTAINER CLASS TO KEEP THE RIGHT AND LEFT SIDES OFF THE EDGE OF THE WINDOW -->
+        <div class='custom-container'>
+            <div class="row text-center">
                 <h1>Page Title</h1>
-                <div id="container">
+            </div>
+            <div class="row">
+            <!-- VERTICAL NAVBAR -->
+                <div class="col-sm-2">
+                    <div class="panel panel-default">
+                        <table class="table" id='sub-nav'>  <!-- #sub-nav will be JavaScript's hook to update sub-nav -->
+                            <tbody>
+                                <tr><td>This is just</td></tr>
+                                <tr><td>filler text for the</td></tr>
+                                <tr><td>sub-nav. Javascript</td></tr>
+                                <tr><td>Will build this</td></tr>
+                                <tr><td>dynamically.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            <!-- MAIN CONTENT -->
+                <div class="col-sm-8" id="main-content">    <!-- #main-content -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                        <h3 class="panel-title">Panel title</h3>
+                            <h3 class="panel-title">Panel title</h3>
                         </div>
                         <div class="panel-body">
-                        Panel content
+                            Panel content
                         </div>
                     </div>
                 </div>
-            </div>
 
-
-        <!-- CONTACT US -->
-            <div class="col-sm-3" id="vertRightContent">
-                <a href=""><img src="images/FB-fLogo-Blue-broadcast-2.png" alt="facebook logo" id="FBlogo" /></a>Like us on Facebook!
-                <br>
-                <br>
-                <div id="googleMap">
-                    google map API call
+            <!-- SOCIAL MEDIA -->
+                <div class="col-sm-2" id="right-sidebar">   <!-- #right-sidebar -->
+                    Find us On
+                    <hr>
+                    <a href="">
+                        <img src="images/FB-fLogo-Blue-broadcast-2.png" alt="facebook logo" id="FBlogo" width='50px' height='50px' />
+                    </a>
+                    Facebook
                 </div>
-                <br>
-                <address>
+
+            </div> <!-- End of Main Content Row -->
+        </div> <!-- End of Custom Container -->
+
+    <!-- FOOTER / CONTACT US -->
+        <div class="footer navbar-fixed-bottom">
+            <div class='container'>
+                <div id='google-maps'>                   <!-- #google-maps -->
+                    <a href='#'>google map API call</a>
+                </div>
+                <div class="text-right" id='address'>    <!-- #address -->
                     <b>Arabesque Studio of the Dance</b><br>
                     7989 Beltline Road<br>
                     Suite #176 <br>
                     Dallas, Texas 75248 <br>
                     (Northwest Corner Coit &amp; Beltline)<br>
-                <a href="tel://972332532">972-233-2532</a>
-                </address>
+                    <a href="tel://972332532">972-233-2532</a>
+                </div>
             </div>
         </div>
 
