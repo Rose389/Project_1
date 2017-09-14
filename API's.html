@@ -1,5 +1,14 @@
 //API's
 
+FACEBOOK Link to code
+https://developers.facebook.com/docs/plugins/page-plugin
+
+Feed on website code
+<iframe class="fb-page" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=124854171581749" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+link to feed
+w script
+<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
 
 //Facebook
 <script>
@@ -22,19 +31,40 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-//Filestack
-<script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
-<script>
-    var client = filestack.init('AcZk1k36RmqiIjOZMdj0jz');
-    function showPicker() {
-        client.pick({
-        }).then(function(result) {
-            console.log(JSON.stringify(result.filesUploaded))
-        });
-    }
-</script>
-<input type="button" value="Upload" onclick="showPicker()" />
+
 
 //Google Maps
 KEY: AIzaSyDa5axavfiocQ69O1zpMUGvcs9QjsgQWI8
 Link: https://developers.google.com/maps/documentation/javascript/
+
+//embedded map with input for directions from
+<form action=”http://maps.google.com/maps” method=”get” target=”_blank”>
+Enter your starting address:
+<input type=”text” name=”saddr” />
+<input type=”hidden” name=”daddr” value=”854 Deerfield Rd, Allen, TX” />
+<input type=”submit” value=”get directions” />
+</form>
+
+Southern Methodist University
+Place ID ChIJFU7ARwSfToYRLlSZG7jKX8A
+Dallas, TX 75205, USA
+
+{
+  origin: '',
+  destination: 'SMU Dallas, TX',
+  waypoints: [
+    {
+      location: 'Joplin, MO',
+      stopover: false
+    },{
+      location: 'Oklahoma City, OK',
+      stopover: true
+    }],
+  provideRouteAlternatives: false,
+  travelMode: 'DRIVING',
+  drivingOptions: {
+    departureTime: new Date(/* now, or future date */),
+    trafficModel: 'pessimistic'
+  },
+  unitSystem: google.maps.UnitSystem.IMPERIAL
+}
