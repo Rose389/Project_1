@@ -37,34 +37,3 @@ w script
 KEY: AIzaSyDa5axavfiocQ69O1zpMUGvcs9QjsgQWI8
 Link: https://developers.google.com/maps/documentation/javascript/
 
-//embedded map with input for directions from
-<form action=”http://maps.google.com/maps” method=”get” target=”_blank”>
-Enter your starting address:
-<input type=”text” name=”saddr” />
-<input type=”hidden” name=”daddr” value=”854 Deerfield Rd, Allen, TX” />
-<input type=”submit” value=”get directions” />
-</form>
-
-Southern Methodist University
-Place ID ChIJFU7ARwSfToYRLlSZG7jKX8A
-Dallas, TX 75205, USA
-
-{
-  origin: '',
-  destination: 'SMU Dallas, TX',
-  waypoints: [
-    {
-      location: 'Joplin, MO',
-      stopover: false
-    },{
-      location: 'Oklahoma City, OK',
-      stopover: true
-    }],
-  provideRouteAlternatives: false,
-  travelMode: 'DRIVING',
-  drivingOptions: {
-    departureTime: new Date(/* now, or future date */),
-    trafficModel: 'pessimistic'
-  },
-  unitSystem: google.maps.UnitSystem.IMPERIAL
-}
