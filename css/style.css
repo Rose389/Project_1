@@ -33,8 +33,12 @@
 		background-color: #AFAFAF;
 	}
 	
-	#sub-nav {
-		color: black;
+	.btn-group-vertical{
+		width:100%;
+	}
+
+	.btn-default{
+		padding: 15px;
 	}
 
 	#right-sidebar {
