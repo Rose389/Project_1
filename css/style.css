@@ -32,13 +32,17 @@
 	a.list-group-item.active:hover{
 		background-color: #AFAFAF;
 	}
-	
+
 	.btn-group-vertical{
 		width:100%;
 	}
 
 	.btn-default{
 		padding: 15px;
+	}
+
+	.panel{
+		color: black;
 	}
 
 	#right-sidebar {
