@@ -32,5 +32,11 @@
     // Main Navbar Buttons
         $(document).on("click", ".btn-default", loadContent);
 
+//-- IMAGE AND VIDEO GALLERIES --//
+    // Photo Album
+        $("#gallery").unitegallery({
+            gallery_theme: "compact"
+        });
+
 //-- API CODE --//
 
