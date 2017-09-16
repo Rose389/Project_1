@@ -56,7 +56,7 @@ panel #sub-nav {
 		color: #fff ;
 	}
 
-/* NAVBAR */
+/* MAIN NAVBAR */
 	.active {
 		background-color: #fff;
 		color: #000;
@@ -70,7 +70,24 @@ panel #sub-nav {
 	}
 
 /* MAIN CONTENT ROW */
-	#sub-nav {
+	a.list-group-item.active{
+		background-color: gray;
+		border: none;
+	}
+
+	a.list-group-item.active:hover{
+		background-color: #AFAFAF;
+	}
+
+	.btn-group-vertical{
+		width:100%;
+	}
+
+	.btn-default{
+		padding: 15px;
+	}
+
+	.panel-body{
 		color: black;
 	}
 
