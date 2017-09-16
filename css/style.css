@@ -1,0 +1,85 @@
+
+#FBlogo {
+	width: 50px;
+	margin-right: 10px;
+}
+
+/* AFFECTS WHOLE PAGE */
+	.custom-container{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	body {
+		background-color: #000;
+		background-image: url("../images/dark_wood.png");
+		color: #fff ;
+	}
+
+	p {
+		width: 256px;
+	}
+
+	.float-right {
+		float: right;
+	}
+
+	.float-left {
+		float: left;
+	}
+
+/* MAIN NAVBAR */
+	.active {
+		background-color: #fff;
+		color: #000;
+		font-weight: bold;
+	}
+
+	.navbar {
+		background-color: #000;
+		color: #fff;
+		border: none;
+	}
+
+/* MAIN CONTENT ROW */
+	a.list-group-item.active{
+		background-color: gray;
+		border: none;
+	}
+
+	a.list-group-item.active:hover{
+		background-color: #AFAFAF;
+	}
+
+	.btn-group-vertical{
+		width:100%;
+	}
+
+	.btn-default{
+		padding: 15px;
+	}
+
+	.panel-body{
+		color: black;
+	}
+
+	#right-sidebar {
+
+	}
+
+/* FOOTER */
+	#address {
+		float:right;
+		color: #fff;
+	}
+
+	#phoneNum {
+		color: #fff;
+	}
+
+	#google-maps {
+		float: left;
+		background-color: #fff;
+		width: 100px;
+		height: 100px;
+	}
