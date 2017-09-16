@@ -45,6 +45,8 @@
         $(document).ready(function(){
             galleryApi = $("#gallery").unitegallery();
         });
+    // Video Album
+        
 
 //-- API CODE --//
 
