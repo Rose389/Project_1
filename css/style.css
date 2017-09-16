@@ -63,6 +63,13 @@
 		color: black;
 	}
 
+	.price {
+		background-color: #000;
+		height: 25px;
+		width: 50px;
+
+	}
+
 	#right-sidebar {
 
 	}
