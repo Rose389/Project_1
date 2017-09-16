@@ -35,7 +35,15 @@
 //-- IMAGE AND VIDEO GALLERIES --//
     // Photo Album
         $("#gallery").unitegallery({
-            gallery_theme: "compact"
+            gallery_theme: "compact",
+            gallery_skin:"alexis"
+        });
+        $(document).ready(function(){ 
+            $("#gallery").unitegallery(); 
+        });
+        var galleryApi;
+        $(document).ready(function(){
+            galleryApi = $("#gallery").unitegallery();
         });
 
 //-- API CODE --//
