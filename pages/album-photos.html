@@ -16,3 +16,18 @@
             </div>
     </div>
 </div>
+
+<script>
+    // Photo Album
+    $("#gallery").unitegallery({
+        gallery_theme: "compact",
+        gallery_skin:"alexis"
+    });
+    $(document).ready(function(){ 
+        $("#gallery").unitegallery(); 
+    });
+    var galleryApi;
+    $(document).ready(function(){
+        galleryApi = $("#gallery").unitegallery();
+    });
+</script>
