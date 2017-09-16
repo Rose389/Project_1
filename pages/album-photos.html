@@ -2,7 +2,32 @@
     <div class="panel-heading">
         <h3 class="panel-title">Photos</h3>
     </div>
-    <div class="panel-body">
-        It Worked too!
+    <div class="panel-body text-center">
+            <div id="gallery" style="display:none;">
+                    
+                <img alt="Image 1" src="./unitegallery-master/images/thumbs/image1.jpg"
+                    data-image="./unitegallery-master/images/big/image1.jpg"
+                    data-description="Image 1 Description">
+                
+                <img alt="Image 2" src="./unitegallery-master/images/thumbs/image2.jpg"
+                    data-image="./unitegallery-master/images/big/image2.jpg"
+                    data-description="Image 2 Description">
+            
+            </div>
     </div>
 </div>
+
+<script>
+    // Photo Album
+    $("#gallery").unitegallery({
+        gallery_theme: "carousel",
+        gallery_skin:"alexis"
+    });
+    $(document).ready(function(){ 
+        $("#gallery").unitegallery(); 
+    });
+    var galleryApi;
+    $(document).ready(function(){
+        galleryApi = $("#gallery").unitegallery();
+    });
+</script>

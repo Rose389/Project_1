@@ -25,11 +25,38 @@
     // Loads main content section with different HTML
         function loadContent(){
             var page = $(this).attr('data-name');
+            console.log(page);
             $("#main-content").load("./pages/" + page);
         }
 //-- CLICK LISTENERS --//
-    // Sub Navbar Buttons
-        $(document).on("click", ".btn-default", loadContent);        
+    // Main Navbar Buttons
+        $(document).on("click", ".btn-default", loadContent);
+
+//-- IMAGE AND VIDEO GALLERIES --//
+    // Photo Album
+        $("#gallery").unitegallery({
+            gallery_theme: "compact"
+        });
+
+       $("#gallery").unitegallery({
+            gallery_theme: "video"
+       });
 
 //-- API CODE --//
+        window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '124854171581749',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
