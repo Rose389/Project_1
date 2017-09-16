@@ -1,37 +1,46 @@
 # Project_1
 
-Page One: Landing Page
+[GitHub Pages Link](https://rose389.github.io/Project_1/)
 
-	Main Content: Welcome, News, Calender
+### Rough Sketch
+![Rough Sketch](images/HTML-Design.jpg)
 
+### Page One: Landing Page
+* ON LOAD: 	Large Image + Enter Site Button (Hides Big Image and Button - Loads Welcome/News)
+* CONTENT: 	Welcome, News
+* SUB-NAV:	
+	* About Us (`home-aboutUs.html`)
+	* Why Dance? (`home-whyDance.html`)
+	* Customer Thoughts (`home-testimonials.html`)
+	* Community (`home-community.html`)
+	* Terminology (`home-terminology.html`)
+	* FAQ (`home-faq.html`)
 
-	User Interaction: 
-		calender: find plugin so user can click to go to another month and so that it refreshes without reloading the whole page.
+### Page 2: Class Schedule
+* ON LOAD: 	Class Schedule Page
+* CONTENT:	Simple schedule with class times
+* SUB-NAV:	
+	* Class Schedule: (MENU)
+		* Young Children (`class-young.html`)
+		* Preteen &amp; Teen (`class-teens.html`)
+		* Adult (`class-adult.html`)
+	* Charm (`class-charm.html`)
+	* Dress Code (`class-dressCode.html`)
+	* Performance (`class-performance.html`)
+	* Policies (`class-policies.html`)
 
+### Page 3: Album
+* ON LOAD: 	Photos Page
+* SUB-NAV:	
+	* Photos (`album-photos.html`)
+	* Student Accomplishments (`album-accomplishments.html`)
+	* Videos (`album-videos.html`)
 
-
-Page Two: History
-
-	Main Content: Info about them and what they do.
-
-
-	User Interaction:
-
-
-
-Page Three: Dance Info
-
-	Main Content: dress code, 
-
-
-	User Interaction:
-
-
-
-Page Four:
-
-	Main Content:
-
-
-	User Interaction:
-
+### Page 4: My Account
+* ON LOAD: 	Menu with info about the sub-navs
+* SUB-NAV:
+	* Register (`acct-register.html`)
+	* Shoes (`acct-shoes.html`)
+	* Leotards &amp; Tights (`acct-clothes.html`)
+	* Dance Bags (`acct-danceBags.html`)
+	* Miscellaneous (`acct-misc.html`)

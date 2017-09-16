@@ -1,7 +1,7 @@
 // -- VARIABLES -- //
-    var subNavObjs = {
+    var subNavObjArray = {
         home: {
-
+            
         },
         classes: {
 
@@ -39,16 +39,53 @@
 function loadSubNav (){                                             // Dynamically generate sub-nav buttons
     var navName = $(this).attr('data-name');
     $("#sub-nav").empty();
-    var subNavTable = $("<table class='table'>");
     var tBody = $("<tbody>");
-    var tRow = $("<tr>");
-
-
-    $('#sub-nav').append(subNavTable);
+    for (var p = 0; p < subNavObjArray.length; p++) {
+        var tRow = $("<tr>");
+        var tData = $("<td>");
+            // Put the text into the table row
+        tRow.append(tData);
+        tBody.append(tRow);
+    }
+    $('#sub-nav').append(tBody);
 }
 
 $("#videos-btn").click(function(){                                  // Switch the image gallery out for embedded YT vid
-
+    
 })
 
 $(document).on("click", ".main-nav-btns", loadSubNav);             // When a master nav (top bar) is clicked, regen the subnav
+
+//-- API CODE --//
+    // Facebook
+        window.fbAsyncInit = function() {
+        FB.init({
+            appId            : '124854171581749',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.10'
+        });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    // Google Maps
+        // KEY: AIzaSyDa5axavfiocQ69O1zpMUGvcs9QjsgQWI8
+        // Link: https://developers.google.com/maps/documentation/javascript/
+
+    // FileStack
+        var fileStackClient = filestack.init('AcZk1k36RmqiIjOZMdj0jz');
+        function showPicker() {
+            fileStackClient.pick({
+            }).then(function(result) {
+                console.log(JSON.stringify(result.filesUploaded))
+            });
+        }
+        // <input type="button" value="Upload" onclick="showPicker()" />

@@ -1,10 +1,11 @@
+<<<<<<< HEAD
 body {
 	background-color: #000;
 	background-image: url("../images/dark_wood.png");
 	color: #fff ;
 }
 
-address {
+#address {
 	width: 90%;
 	color: #fff;
 }
@@ -22,17 +23,11 @@ address {
 	border: none;
 }
 
-.vertLeftNav {
+panel #sub-nav {
 	width: 90%;
 	margin: auto;
-	margin-right: 0;
 }
 
-.vertRightContent {
-	width: 90%;
-	margin: auto;
-	margin-left: 0;
-}
 
 #FBlogo {
 	width: 50px;
@@ -48,3 +43,50 @@ address {
 #phoneNum {
 	color: #fff;
 }
+=======
+/* AFFECTS WHOLE PAGE */
+	.custom-container{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	body {
+		background-color: #000;
+		background-image: url("../images/dark_wood.png");
+		color: #fff ;
+	}
+
+/* NAVBAR */
+	.active {
+		background-color: #fff;
+		color: #000;
+		font-weight: bold;
+	}
+
+	.navbar {
+		background-color: #000;
+		color: #fff;
+		border: none;
+	}
+
+/* MAIN CONTENT ROW */
+	#sub-nav {
+		color: black;
+	}
+
+	#right-sidebar {
+
+	}
+
+/* FOOTER */
+	#address {
+		float:right;
+	}
+
+	#google-maps {
+		float: left;
+		background-color: #fff;
+		width: 100px;
+		height: 100px;
+	}
+>>>>>>> 14f6db563457545cc1cdbbdd608756034940bd08
