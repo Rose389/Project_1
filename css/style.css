@@ -1,3 +1,49 @@
+<<<<<<< HEAD
+body {
+	background-color: #000;
+	background-image: url("../images/dark_wood.png");
+	color: #fff ;
+}
+
+#address {
+	width: 90%;
+	color: #fff;
+}
+
+.active {
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
+
+}
+
+.navbar {
+	background-color: #000;
+	color: #fff;
+	border: none;
+}
+
+panel #sub-nav {
+	width: 90%;
+	margin: auto;
+}
+
+
+#FBlogo {
+	width: 50px;
+	margin-right: 10px;
+}
+
+#googleMap {
+	background-color: #fff;
+	width: 90%;
+	height: 15em;
+}
+
+#phoneNum {
+	color: #fff;
+}
+=======
 /* AFFECTS WHOLE PAGE */
 	.custom-container{
 		padding-right: 10px;
@@ -60,3 +106,4 @@
 		width: 100px;
 		height: 100px;
 	}
+>>>>>>> 14f6db563457545cc1cdbbdd608756034940bd08
