@@ -27,6 +27,7 @@
             var page = $(this).attr('data-name');
             $("#main-content").load("./pages/" + page);
         }
+        
 //-- CLICK LISTENERS --//
     // Sub Navbar Buttons
         $(document).on("click", ".btn-default", loadContent);        

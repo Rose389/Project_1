@@ -2,9 +2,6 @@
 
 [GitHub Pages Link](https://rose389.github.io/Project_1/)
 
-### Rough Sketch
-![Rough Sketch](images/HTML-Design.jpg)
-
 ### Page One: Landing Page
 * ON LOAD: 	Large Image + Enter Site Button (Hides Big Image and Button - Loads Welcome/News)
 * CONTENT: 	Welcome, News
