@@ -25,7 +25,6 @@
     // Loads main content section with different HTML
         function loadContent(){
             var page = $(this).attr('data-name');
-            console.log(page);
             $("#main-content").load("./pages/" + page);
         }
 //-- CLICK LISTENERS --//
