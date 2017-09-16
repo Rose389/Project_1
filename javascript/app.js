@@ -29,7 +29,7 @@
             $("#main-content").load("./pages/" + page);
         }
 //-- CLICK LISTENERS --//
-    // Main Navbar Buttons
+    // Sub Navbar Buttons
         $(document).on("click", ".btn-default", loadContent);        
 
 //-- API CODE --//
