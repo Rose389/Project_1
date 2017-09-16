@@ -30,23 +30,7 @@
         }
 //-- CLICK LISTENERS --//
     // Main Navbar Buttons
-        $(document).on("click", ".btn-default", loadContent);
-
-//-- IMAGE AND VIDEO GALLERIES --//
-    // Photo Album
-        $("#gallery").unitegallery({
-            gallery_theme: "compact",
-            gallery_skin:"alexis"
-        });
-        $(document).ready(function(){ 
-            $("#gallery").unitegallery(); 
-        });
-        var galleryApi;
-        $(document).ready(function(){
-            galleryApi = $("#gallery").unitegallery();
-        });
-    // Video Album
-        
+        $(document).on("click", ".btn-default", loadContent);        
 
 //-- API CODE --//
 
