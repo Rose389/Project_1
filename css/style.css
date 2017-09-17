@@ -9,6 +9,10 @@
 		width: 256px;
 	}
 
+	.fb-page{
+		margin-top: 15px;
+	}
+
 	/* 	I won't delete these so they don't cause a git issue but Bootstrap 3
 		has float classes (pull-left and pull-right) built in for future ref
 		-Ben  */
