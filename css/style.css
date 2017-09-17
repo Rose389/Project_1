@@ -24,6 +24,9 @@
 		float: left;
 	}
 
+	#left-side{
+		padding-bottom: 15px;
+	}
 	
 /* MAIN NAVBAR */
 	.navbar-default {
