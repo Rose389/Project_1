@@ -5,21 +5,20 @@
 }
 
 /* AFFECTS WHOLE PAGE */
-	.custom-container{
-		padding-right: 10px;
-		padding-left: 10px;
-	}
 
 	body {
 		background-color: #000;
 		background-image: url("../images/dark_wood.png");
-		color: #fff ;
+		color: #fff;
 	}
 
 	p {
 		width: 256px;
 	}
 
+	/* 	I won't delete these so they don't cause a git issue but Bootstrap 3
+		has float classes (pull-left and pull-right) built in for future ref
+		-Ben  */
 	.float-right {
 		float: right;
 	}
@@ -70,11 +69,23 @@
 
 	}
 
-	#right-sidebar {
-
+/* FOOTER */
+	html, body { /* For the Sticky Footer */
+		height: 100%; 	
+		margin: 0;
 	}
 
-/* FOOTER */
+	.wrapper {
+		min-height: 100%;
+		/* Equal to height of footer */
+		/* But also accounting for potential margin-bottom of last child */
+		margin-bottom: -150px;
+	}
+
+	.footer, .push {
+		height: 150px;
+	}
+
 	#address {
 		float:right;
 		color: #fff;
@@ -86,7 +97,4 @@
 
 	#google-maps {
 		float: left;
-		background-color: #fff;
-		width: 100px;
-		height: 100px;
 	}
