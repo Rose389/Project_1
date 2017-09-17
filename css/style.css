@@ -85,11 +85,12 @@
 		min-height: 100%;
 		/* Equal to height of footer */
 		/* But also accounting for potential margin-bottom of last child */
-		margin-bottom: -155px;
+		margin-bottom: -165px;
 	}
 
 	.footer, .push {
 		height: 150px;
+		margin-top:10px;
 	}
 
 	#address {
