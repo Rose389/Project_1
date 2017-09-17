@@ -1,8 +1,8 @@
 <div class="panel panel-default">
     <div class="panel-body text-center">
+
             <h2>Spring Show</h2>
             <div id="gallery" style="display:none;">
-                    
                 <img alt="Image 1" src="./unitegallery-master/images/thumbs/image1.jpg"
                     data-image="./unitegallery-master/images/big/image1.jpg"
                     data-description="Image 1 Description">
@@ -10,11 +10,10 @@
                 <img alt="Image 2" src="./unitegallery-master/images/thumbs/image2.jpg"
                     data-image="./unitegallery-master/images/big/image2.jpg"
                     data-description="Image 2 Description">
-            
             </div>
+
             <h2>The Other Show</h2>
-            <div id="gallery2" style="display:none;">
-                    
+            <div id="gallery2" style="display:none;">  
                 <img alt="Image 1" src="./unitegallery-master/images/thumbs/image2.jpg"
                     data-image="./unitegallery-master/images/big/image2.jpg"
                     data-description="Image 2 Description">
@@ -22,11 +21,10 @@
                 <img alt="Image 2" src="./unitegallery-master/images/thumbs/image1.jpg"
                     data-image="./unitegallery-master/images/big/image1.jpg"
                     data-description="Image 1 Description">
-            
             </div>
+
             <h2>The Other Other Show</h2>
-            <div id="gallery3" style="display:none;">
-                    
+            <div id="gallery3" style="display:none;"> 
                 <img alt="Image 1" src="./unitegallery-master/images/thumbs/image1.jpg"
                     data-image="./unitegallery-master/images/big/image1.jpg"
                     data-description="Image 1 Description">
@@ -34,8 +32,8 @@
                 <img alt="Image 2" src="./unitegallery-master/images/thumbs/image2.jpg"
                     data-image="./unitegallery-master/images/big/image2.jpg"
                     data-description="Image 2 Description">
-            
             </div>
+
     </div>
 </div>
 
@@ -45,35 +43,20 @@
         gallery_theme: "carousel",
         gallery_skin:"alexis"
     });
-    $(document).ready(function(){ 
-        $("#gallery").unitegallery(); 
-    });
-    var galleryApi;
-    $(document).ready(function(){
-        galleryApi = $("#gallery").unitegallery();
-    });
     // Carousel 2
     $("#gallery2").unitegallery({
         gallery_theme: "carousel",
         gallery_skin:"alexis"
-    });
-    $(document).ready(function(){ 
-        $("#gallery2").unitegallery(); 
-    });
-    var galleryApi;
-    $(document).ready(function(){
-        galleryApi = $("#gallery2").unitegallery();
     });
     // Carousel 3
     $("#gallery3").unitegallery({
         gallery_theme: "carousel",
         gallery_skin:"alexis"
     });
+    
     $(document).ready(function(){ 
-        $("#gallery3").unitegallery(); 
-    });
-    var galleryApi;
-    $(document).ready(function(){
-        galleryApi = $("#gallery3").unitegallery();
+        $("#gallery").unitegallery();
+        $("#gallery2").unitegallery();
+        $("#gallery3").unitegallery();
     });
 </script>
