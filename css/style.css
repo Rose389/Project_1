@@ -22,16 +22,28 @@
 
 	
 /* MAIN NAVBAR */
-	.active {
-		background-color: #fff;
-		color: #000;
+	.navbar-default {
+		background-color: transparent;
+		border: none;
+		width: 100%;
+		font-size: 18px;
 		font-weight: bold;
 	}
-
-	.navbar {
-		background-color: #000;
-		color: #fff;
-		border: none;
+	/* Links */
+	.navbar-default .navbar-nav > li > a {
+		color: #D5D5D5;
+	}
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+		color: #5E7BB6;
+		text-decoration: underline;
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+		color: #5E7BB6;
+		text-decoration: underline;
+		background-color: transparent;
 	}
 
 /* MAIN CONTENT ROW */
