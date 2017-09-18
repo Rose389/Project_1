@@ -46,6 +46,11 @@
 		background-color: transparent;
 	}
 
+	.navbar-brand{
+		font-family: 'Dancing Script', cursive;
+		font-size: 24px;
+	}
+
 /* MAIN CONTENT ROW */
 	a.list-group-item.active{
 		background-color: gray;

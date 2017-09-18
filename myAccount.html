@@ -7,24 +7,44 @@
         <!-- CSS -->
             <link type="text/stylesheet" href="css/reset.css" rel="stylesheet">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
             <link href="css/style.css" rel="stylesheet">
+            
+        <!-- FAVICON -->
+            <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- FONT -->
+            <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     </head>
     <body>
         <div class='wrapper'> <!-- Wraps the page for the footer to function correctly -->
     <!-- HORIZONTAL NAVBAR -->
-        <nav class="navbar navbar-default"  role="navigation">
-            <div class="container">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="classes.html">Classes</a></li>
-                    <li><a href="album.html">Album</a></li>
-                    <li class="active"><a href="myAccount.html">My Account</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <a href='signUp.html'><button type="button" class="btn btn-success navbar-btn">Sign Up for Email</button></a>
-                </ul>
-            </div>
-        </nav>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src='images/dancer.png' alt='Dancing Silhouette' width='30px' height='30px'>
+                        </a>
+                        <a class='navbar-brand' href='index.html'>Dance Studio</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="classes.html">Classes</a></li>
+                            <li><a href="album.html">Album</a></li>
+                            <li class="active"><a href="myAccount.html">My Account</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <a href='signUp.html'><button type="button" class="btn btn-success navbar-btn">Sign Up for Email</button></a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
     <!-- MAIN CONTENT WINDOW -->
         <div class='container'>
             <div class="row text-center">
