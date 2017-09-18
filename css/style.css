@@ -1,25 +1,17 @@
-
-#FBlogo {
-	width: 50px;
-	margin-right: 10px;
-}
-
 /* AFFECTS WHOLE PAGE */
-	.custom-container{
-		padding-right: 10px;
-		padding-left: 10px;
-	}
-
 	body {
 		background-color: #000;
 		background-image: url("../images/dark_wood.png");
-		color: #fff ;
+		color: #fff;
 	}
 
 	p {
 		width: 256px;
 	}
 
+	/* 	I won't delete these so they don't cause a git issue but Bootstrap 3
+		has float classes (pull-left and pull-right) built in for future ref
+		-Ben  */
 	.float-right {
 		float: right;
 	}
@@ -28,17 +20,30 @@
 		float: left;
 	}
 
+	
 /* MAIN NAVBAR */
-	.active {
-		background-color: #fff;
-		color: #000;
+	.navbar-default {
+		background-color: transparent;
+		border: none;
+		width: 100%;
+		font-size: 18px;
 		font-weight: bold;
 	}
-
-	.navbar {
-		background-color: #000;
-		color: #fff;
-		border: none;
+	/* Links */
+	.navbar-default .navbar-nav > li > a {
+		color: #D5D5D5;
+	}
+	.navbar-default .navbar-nav > li > a:hover,
+	.navbar-default .navbar-nav > li > a:focus {
+		color: #5E7BB6;
+		text-decoration: underline;
+	}
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > .active > a:focus {
+		color: #5E7BB6;
+		text-decoration: underline;
+		background-color: transparent;
 	}
 
 /* MAIN CONTENT ROW */
@@ -55,31 +60,34 @@
 		width:100%;
 	}
 
-	.btn-default{
-		padding: 15px;
-	}
-
-	.panel-body{
+	.panel{
 		color: black;
 	}
 
-	#right-sidebar {
+	.price {
+		background-color: black;
+		height: 25px;
+		width: 50px;
 
 	}
 
 /* FOOTER */
-	#address {
-		float:right;
-		color: #fff;
+	html, body { /* For the Sticky Footer */
+		height: 100%; 	
+		margin: 0;
+	}
+
+	.wrapper {
+		min-height: 100%;
+		/* Equal to height of footer */
+		/* But also accounting for potential margin-bottom of last child */
+		margin-bottom: -155px;
+	}
+
+	.footer, .push {
+		height: 150px;
 	}
 
 	#phoneNum {
 		color: #fff;
-	}
-
-	#google-maps {
-		float: left;
-		background-color: #fff;
-		width: 100px;
-		height: 100px;
 	}

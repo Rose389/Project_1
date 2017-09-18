@@ -8,7 +8,6 @@
             <link type="text/stylesheet" href="css/reset.css" rel="stylesheet">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
             <link href="css/style.css" rel="stylesheet">
-
             
         <!-- IMAGE/VIDEO UNITE GALLERY -->
             <script type='text/javascript' src='photovideogallery/unitegallery/js/unitegallery.min.js'></script>
@@ -18,32 +17,33 @@
 
     </head>
     <body>
+        <div class='wrapper'> <!-- Wraps the page for the footer to function correctly -->
     <!-- HORIZONTAL NAVBAR -->
         <nav class="navbar navbar-default"  role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Andrea's Dance Studio</a>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
+            <div class="container">
+                <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="classes.html">Classes</a></li>
                     <li class="active"><a href="album.html">Album</a></li>
                     <li><a href="myAccount.html">My Account</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <a href='signUp.html'><button type="button" class="btn btn-success navbar-btn">Sign Up for Email</button></a>
+                </ul>
             </div>
         </nav>
-    <!-- CUSTOM CONTAINER CLASS TO KEEP THE RIGHT AND LEFT SIDES OFF THE EDGE OF THE WINDOW -->
-        <div class='custom-container'>
+    <!-- MAIN CONTENT WINDOW -->
+        <div class='container'>
             <div class="row text-center">
                 <h1>Page Title</h1>
 
             </div>
             <div class="row">
             <!-- VERTICAL NAVBAR -->
-                <div class="col-sm-2">
+                <div class="col-sm-2 col-sm-offset-">
                     <div class='btn-group-vertical'>
                         <button type='button' class="btn btn-default" data-name='album-photos.html'>Photos</button>
-                        <button type='button' class="btn btn-default" data-name='album-accomplishments.html'>Student Accomplishments</button>
+                        <button type='button' class="btn btn-default" data-name='album-accomplishments.html'>Accomplishments</button>
                         <button type='button' class="btn btn-default" data-name='album-videos.html'>Videos</button>
                     </div>
                 </div>
@@ -63,39 +63,32 @@
                 </div>
                 
             <!-- SOCIAL MEDIA -->
-                <div class="col-sm-2" id="right-sidebar">   <!-- #right-sidebar -->
-                    Find us On
-                    <hr>
-
-                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/facebook">
-                        <img src="images/FB-fLogo-Blue-broadcast-2.png" alt="facebook logo" id="FBlogo" width='50px' height='50px' />Facebook</a>
-                    </blockquote></div>
-                    <iframe class="fb-page" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=124854171581749" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-
+                <div class="col-sm-2">
+                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"></blockquote>
+                    </div>
                 </div>
-
             </div> <!-- End of Main Content Row -->
         </div> <!-- End of Custom Container -->
-
+        <div class='push'></div>    <!-- Extends the page down just enough for the footer/wrapper to play nice -->
+    </div> <!-- End of Page Wrapper for Sticky Footer -->
     <!-- FOOTER / CONTACT US -->
-        <div class="footer navbar-fixed-bottom">
+        <footer>
             <div class='container'>
-                <div id='google-maps'>                      <!-- #google-maps -->
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6704.304349627702!2d-96.7888948675205!3d32.84122228801647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2b7a8c3c4035ebb!2sScience-Engineering+Library!5e0!3m2!1sen!2sus!4v1505430372754" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+                <div class='col-sm-6 text-right' id='google-maps'>                      <!-- #google-maps -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6704.304349627702!2d-96.7888948675205!3d32.84122228801647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2b7a8c3c4035ebb!2sScience-Engineering+Library!5e0!3m2!1sen!2sus!4v1505430372754" width="150" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-                <div class="text-right" id='address'>       <!-- #address -->
+                <div class='col-sm-6'>
+                    <br>
                     <b>Arabesque Studio of the Dance</b><br>
                     7989 Beltline Road<br>
                     Suite #176 <br>
                     Dallas, Texas 75248 <br>
-                    (Northwest Corner Coit &amp; Beltline)<br><br>
-                    <a href="tel://972332532" id="phoneNum">972-233-2532</a>
+                    (Northwest Corner Coit &amp; Beltline)<br>
+                    <a href="tel://972332532">972-233-2532</a>
                 </div>
-                <br>
             </div>
-        </div>
+        </footer>
 
     <!-- JQUERY -->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -103,11 +96,12 @@
         <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 
     <!-- UNITE GALLERY -->
-        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-        <script type='text/javascript' src='unitegallery-master/unitegallery/js/unitegallery.min.js'></script>
-        <script type='text/javascript' src='unitegallery-master/unitegallery/themes/carousel/ug-theme-carousel.js'></script> 
-        <link rel='stylesheet' href='unitegallery-master/unitegallery/css/unite-gallery.css' type='text/css' />
-        <link rel='stylesheet' href='unitegallery-master/unitegallery/skins/alexis/alexis.css' type='text/css' />
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>        <!-- jQuery for Unite -->
+        <script type='text/javascript' src='unitegallery-master/unitegallery/js/unitegallery.min.js'></script>                  <!-- Unite Gallery JS -->
+        <script type='text/javascript' src='unitegallery-master/unitegallery/themes/carousel/ug-theme-carousel.js'></script>    <!-- Carousel Theme JS -->
+        <script type='text/javascript' src='unitegallery-master/unitegallery/themes/video/ug-theme-video.js'></script>          <!-- Video Theme JS -->
+        <link rel='stylesheet' href='unitegallery-master/unitegallery/css/unite-gallery.css' type='text/css'>                   <!-- Img Gallery CSS -->
+        <link rel='stylesheet' href='unitegallery-master/unitegallery/themes/video/skin-right-title-only.css' type='text/css'>  <!-- Video Skin CSS -->
 
     <!-- JAVASCRIPT -->
         <script type='text/javascript' src='./javascript/app.js'></script>
