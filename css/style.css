@@ -51,6 +51,11 @@
 		font-size: 24px;
 	}
 
+	#signUpBtn{
+		text-decoration: none;
+		color: white;
+	}
+
 /* MAIN CONTENT ROW */
 	a.list-group-item.active{
 		background-color: gray;
