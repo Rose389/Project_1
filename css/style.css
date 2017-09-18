@@ -26,18 +26,20 @@
 		background-color: transparent;
 		border: none;
 		width: 100%;
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: bold;
 	}
 	/* Links */
 	.navbar-default .navbar-nav > li > a {
 		color: #D5D5D5;
 	}
+	
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus {
 		color: #5E7BB6;
 		text-decoration: underline;
 	}
+
 	.navbar-default .navbar-nav > .active > a,
 	.navbar-default .navbar-nav > .active > a:hover,
 	.navbar-default .navbar-nav > .active > a:focus {
