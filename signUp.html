@@ -51,32 +51,42 @@
             </div>
             <div class="row">
             <!-- MAIN CONTENT -->
-                <div class="col-sm-12" id="main-content">    <!-- #main-content -->
-                    <div class="panel panel-default">
+                <div class="col-sm-9">    <!-- LEFT SIDE -->
+                    <div class="panel panel-success">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Obligatory Firebase</h3>
+                            <h3 class="panel-title">Sign Up to Receive our Weekly Newsletter</h3>
                         </div>
                         <div class="panel-body">
-                            Sign Up For Email Thing Here
                             <form role="form">
                                 <div class="form-group">
-                                <label for="name-input">Name:</label>
-                                <input class="form-control" id="name-input" type="text">
+                                    <label for="name-input">Name:</label>
+                                    <input class="form-control" id="name-input" type="text">
                                 </div>
                                 <div class="form-group">
-                                <label for="email-input">Email:</label>
-                                <input class="form-control" id="email-input" type="email">
+                                    <label for="email-input">Email:</label>
+                                    <input class="form-control" id="email-input" type="email">
                                 </div>
                                 <div class="form-group">
-                                <label for="age-input">Age:</label>
-                                <input class="form-control" id="age-input" type="number">
+                                    <label for="age-input">Age:</label>
+                                    <input class="form-control" id="age-input" type="number">
                                 </div>
                                 <div class="form-group">
                                     <label for="comment-input">How did you hear about us?</label>
                                     <textarea class="form-control" id="comment-input" rows="5"></textarea>
                                 </div>
-                                <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+                                <button class="btn btn-success" id="add-user" type="submit">Submit</button>
                             </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">    <!-- RIGHT SIDE -->
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Newest Member!</h3>
+                        </div>
+                        <div class="panel-body text-center">
+                            <h2 id='latest-name'>&nbsp;</h2>
+                            <h4>Thank you for your support!</h4>
                         </div>
                     </div>
                 </div>

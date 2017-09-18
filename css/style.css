@@ -78,7 +78,13 @@
 		background-color: black;
 		height: 25px;
 		width: 50px;
+	}
 
+	#latest-name{
+		font-weight: bold;
+		border: solid 3px green;
+		color: green;
+		margin-top: 5px;
 	}
 
 /* FOOTER */

@@ -1,5 +1,5 @@
 // -- VARIABLES -- //
-
+    var localName = '', localEmail = '', localAge = 0, localComment = '';
 
 // -- FIREBASE -- //
     // Initialize Firebase
@@ -12,50 +12,50 @@
             messagingSenderId: "444510611307"
         };
         firebase.initializeApp(config);
+        var database = firebase.database();
+        
+        // Update Firebase Data on Page Load
+            database.ref().on("value", function(snapshot){
+                if (snapshot.val().newestUser !== ''){
+                    localName = snapshot.val().newestUser.serverName;
+                    $('#latest-name').text(localName);
+                }
+            }, function(error){
+                console.log("The read failed: " + error.code);
+            });
 
-         // Capture Button Click
+    // Capture Button Click
         $("#add-user").on("click", function(event) {
             // prevent page from refreshing when form tries to submit itself
             event.preventDefault();
 
             // Capture user inputs and store them into variables
-            var name = $("#name-input").val().trim();
-            var email = $("#email-input").val().trim();
-            var age = $("#age-input").val().trim();
-            var comment = $("#comment-input").val().trim();
+            localName = $("#name-input").val().trim();
+            localEmail = $("#email-input").val().trim();
+            localAge = $("#age-input").val().trim();
+            localComment = $("#comment-input").val().trim();
 
-            var newUser = {
-                name: name,
-                email: email,
-                age: age,
-                comment: comment
-            };
+            if (localName !== '' &&  localEmail !== '' &&  localAge !== '' &&  localComment !== ''){
+                    var newUser = {
+                        serverName: localName,
+                        serverEmail: localEmail,
+                        serverAge: localAge,
+                        serverComment: localComment
+                    };
+                    
+                    // Uploads user data to the database
+                    database.ref().set({
+                        newestUser: newUser
+                    });
+    
+                    // Clears all of the text-boxes
+                    $("#name-input").val("");
+                    $("#email-input").val("");
+                    $("#age-input").val("");
+                    $("#comment-input").val("");
 
-             // Uploads email data to the database
-            database.ref().push(newUser);
-
-            // Clears all of the text-boxes
-            $("#name-input").val("");
-            $("#email-input").val("");
-            $("#age-input").val("");
-            $("#comment-input").val("");
-        });
-
-        database.ref().on("child_added"), function(snapshot){
-            // Store everything into a variable.
-            var name = snapshot.val().name;
-            var email = snapshot.val().email;
-            var age = snapshot.val().age;
-            var comment = snapshot.val().comment;
-
-        };
-
-    // Update Firebase Data on Page Load
-        var database = firebase.database();
-        database.ref().on("value", function(snapshot){
-            // Do Something
-        }, function(error){
-            console.log("The read failed: " + error.code);
+                    $('#latest-name').text(localName);
+            }
         });
 
 //-- MISC FUNCTIONS --//
