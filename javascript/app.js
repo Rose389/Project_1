@@ -67,7 +67,7 @@
         
 //-- CLICK LISTENERS --//
     // Sub Navbar Buttons
-        $(document).on("click", ".btn-default", loadContent);
+        $(document).on("click", ".sub-nav", loadContent);
 
 //-- API CODE --//
     // Facebook
