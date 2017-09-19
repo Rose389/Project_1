@@ -24,25 +24,62 @@
                     <li><a href="album.html">Album</a></li>
                     <li><a href="myAccount.html">My Account</a></li>
                 </ul>
+                <!-- Commenting out because this IS the sign up page, we don't need to link to it :-)
                 <ul class="nav navbar-nav navbar-right">
                     <a href='signUp.html'><button type="button" class="btn btn-success navbar-btn">Sign Up for Email</button></a>
                 </ul>
+                -->
             </div>
         </nav>
     <!-- MAIN CONTENT WINDOW -->
         <div class='container'>
             <div class="row text-center">
-                <h1>Page Title</h1>
+                <h1>Join our Community!</h1>
             </div>
             <div class="row">
             <!-- MAIN CONTENT -->
-                <div class="col-sm-12" id="main-content">    <!-- #main-content -->
+                <div class="col-sm-10 col-sm-offset-1" id="main-content">    <!-- #main-content -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Obligatory Firebase</h3>
+                            <h3 class="panel-title" id="signUpText">To recieve news and updates regarding our studio including performance oppourtunities &amp; class changes, sign up below.</h3>
                         </div>
                         <div class="panel-body">
-                            Sign Up For Email Thing Here
+                             <!-- Sign-up Form (note the various input "types")-->
+                            <form role="form">
+                            <div class="clearfix">
+                                <div class="form-group float-left">
+                                    <label for="name-input">Name:</label>
+                                    <input class="form-control" id="name-input" type="text">
+                                </div>
+                                <div class="form-group float-left">
+                                    <label for="email-input">Email:</label>
+                                    <input class="form-control" id="email-input" type="email">
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="form-group float-left">
+                                    <label for="student-input">Number of students:</label>
+                                    <input class="form-control" id="student-input" type="number">
+                                </div>
+                                <div class="form-group float-left">
+                                    <label for="student-input">Dance styles interested in:</label>
+                                    <input class="form-control" id="styles-input" type="text">
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="form-group float-left">
+                                    <label for="comment-input">How did you hear about us?</label>
+                                    <textarea class="form-control" id="referral-input" rows="3"></textarea>
+                                </div>
+                                <div class="form-group float-left">
+                                    <label for="comment-input">Any questions or feedback?</label>
+                                    <textarea class="form-control" id="comment-input" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div  class="clearfix">
+                                <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
