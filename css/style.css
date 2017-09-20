@@ -87,10 +87,6 @@
 		margin: auto;
 	}
 
-	p {
-		width: 256px;
-	}
-
 	.btn-group-vertical{
 		width:100%;
 	}
@@ -108,6 +104,10 @@
 		margin: 10px auto;
 		text-align: center;
 		font-size: 18px;
+	}
+
+	.panel-body{
+		padding: 10px;
 	}
 
 	.placeholderImage {
