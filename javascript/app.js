@@ -5,7 +5,7 @@ var reloadTest = 0;
         function loadContent(){
             var page = $(this).attr('data-name');
             $("#main-content").load("./pages/" + page);
-            if (reloadTest=0){
+            if (reloadTest===0){
                 $("#main-page").toggleClass('hidden');
                 $("#welcome-img").toggleClass('hidden');
                 reloadTest++;
