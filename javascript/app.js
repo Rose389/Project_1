@@ -1,12 +1,15 @@
 $("#welcome-img").toggleClass('hidden');
-
+var reloadTest = 0;
 //-- MISC FUNCTIONS --//
     // Loads main content section with different HTML
         function loadContent(){
             var page = $(this).attr('data-name');
             $("#main-content").load("./pages/" + page);
-            $("#main-page").toggleClass('hidden');
-            $("#welcome-img").toggleClass('hidden');
+            if (reloadTest=0){
+                $("#main-page").toggleClass('hidden');
+                $("#welcome-img").toggleClass('hidden');
+                reloadTest++;
+            }
         }
         
 //-- CLICK LISTENERS --//
