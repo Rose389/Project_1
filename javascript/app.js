@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // -- VARIABLES -- //
 
 
@@ -21,11 +22,23 @@
             console.log("The read failed: " + error.code);
         });
 
+=======
+$("#welcome-img").toggleClass('hidden');
+var reloadTest = 0;
+>>>>>>> 22fd0adf738d8554702aa067ee36352839b7efb9
 //-- MISC FUNCTIONS --//
     // Loads main content section with different HTML
         function loadContent(){
             var page = $(this).attr('data-name');
             $("#main-content").load("./pages/" + page);
+<<<<<<< HEAD
+=======
+            if (reloadTest===0){
+                $("#main-page").toggleClass('hidden');
+                $("#welcome-img").toggleClass('hidden');
+                reloadTest++;
+            }
+>>>>>>> 22fd0adf738d8554702aa067ee36352839b7efb9
         }
         
 //-- CLICK LISTENERS --//
@@ -51,4 +64,7 @@
             js.src = "//connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+<<<<<<< HEAD
 
+=======
+>>>>>>> 22fd0adf738d8554702aa067ee36352839b7efb9
