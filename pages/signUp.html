@@ -1,0 +1,112 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Join our community!</h3>
+    </div>
+    <div class="panel-body text-center">
+        <h2 id='latest-name'>&nbsp;</h2>
+        <h4>Thank you for your support!</h4>
+    </div>
+</div>
+<div class="panel panel-primary">
+      <div class="panel-heading">
+            <h3 class="panel-title" id="signUpText">To recieve news and updates regarding our studio including performance oppourtunities &amp; class changes, sign up below.</h3>
+        </div>
+    <div class="panel-body">
+        <form role="form">
+            <div class="clearfix">
+                <div class="form-group float-left">
+                    <label for="name-input">Name:</label>
+                    <input class="form-control" id="name-input" type="text">
+                </div>
+                <div class="form-group float-left">
+                    <label for="email-input">Email:</label>
+                    <input class="form-control" id="email-input" type="email">
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="form-group float-left">
+                    <label for="student-input">Number of students:</label>
+                    <input class="form-control" id="student-input" type="number">
+                </div>
+                <div class="form-group float-left">
+                    <label for="student-input">Dance styles interested in:</label>
+                    <input class="form-control" id="styles-input" type="text">
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="form-group float-left">
+                    <label for="comment-input">How did you hear about us?</label>
+                    <textarea class="form-control" id="referral-input" rows="3"></textarea>
+                </div>
+                <div class="form-group float-left">
+                    <label for="comment-input">Any questions or feedback?</label>
+                    <textarea class="form-control" id="comment-input" rows="3"></textarea>
+                </div>
+            </div>
+            <div  class="clearfix">
+                <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+var localName = '', localEmail = '', localAge = 0, localComment = '';
+
+// Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBDk0aru8IkIQsTUQ1uQRYS7SutJrEXjVI",
+        authDomain: "boot-proj-1.firebaseapp.com",
+        databaseURL: "https://boot-proj-1.firebaseio.com",
+        projectId: "boot-proj-1",
+        storageBucket: "",
+        messagingSenderId: "444510611307"
+    };
+    firebase.initializeApp(config);
+    var database = firebase.database();
+    
+// Update Firebase Data on Page Load
+    database.ref().on("value", function(snapshot){
+        if (snapshot.val().newestUser !== ''){
+            localName = snapshot.val().newestUser.serverName;
+            $('#latest-name').text(localName);
+        }
+    }, function(error){
+        console.log("The read failed: " + error.code);
+    });
+
+// Capture Button Click
+    $("#add-user").on("click", function(event) {
+        // prevent page from refreshing when form tries to submit itself
+        event.preventDefault();
+
+        // Capture user inputs and store them into variables
+        localName = $("#name-input").val().trim();
+        localEmail = $("#email-input").val().trim();
+        localAge = $("#age-input").val().trim();
+        localComment = $("#comment-input").val().trim();
+
+        if (localName !== '' &&  localEmail !== '' &&  localAge !== '' &&  localComment !== ''){
+            var newUser = {
+                serverName: localName,
+                serverEmail: localEmail,
+                serverAge: localAge,
+                serverComment: localComment
+            };
+            
+            // Uploads user data to the database
+            database.ref().set({
+                newestUser: newUser
+            });
+
+            // Clears all of the text-boxes
+            $("#name-input").val("");
+            $("#email-input").val("");
+            $("#age-input").val("");
+            $("#comment-input").val("");
+
+            $('#latest-name').text(localName);
+        }
+    });
+</script>
