@@ -20,6 +20,11 @@
 		float: left;
 	}
 
+	#welcome-img{
+		font-size: 72px;
+		font-family: 'Dancing Script', cursive;		 
+	}
+
 	
 /* MAIN NAVBAR */
 	.navbar-default {

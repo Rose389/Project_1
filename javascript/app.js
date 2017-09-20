@@ -1,8 +1,12 @@
+$("#welcome-img").toggleClass('hidden');
+
 //-- MISC FUNCTIONS --//
     // Loads main content section with different HTML
         function loadContent(){
             var page = $(this).attr('data-name');
             $("#main-content").load("./pages/" + page);
+            $("#main-page").toggleClass('hidden');
+            $("#welcome-img").toggleClass('hidden');
         }
         
 //-- CLICK LISTENERS --//
