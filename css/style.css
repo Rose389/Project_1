@@ -1,12 +1,16 @@
 /* AFFECTS WHOLE PAGE */
+	html {
+	  box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+	  box-sizing: inherit;
+	}
+
 	body {
 		background-color: #000;
 		background-image: url("../images/dark_wood.png");
 		color: #fff;
-	}
-
-	p {
-		width: 256px;
 	}
 
 	/* 	I won't delete these so they don't cause a git issue but Bootstrap 3
@@ -73,12 +77,44 @@
 		background-color: #AFAFAF;
 	}
 
+	aside {
+		display: block;
+	}
+
+	form {
+		width: 90%;
+		max-width: 620px;
+		margin: auto;
+	}
+
+	p {
+		width: 256px;
+	}
+
 	.btn-group-vertical{
 		width:100%;
 	}
 
+	.caption {
+		text-align: center;
+	}
+
 	.panel{
 		color: black;
+	}
+
+	.panel-title {
+		max-width: 560px;
+		margin: 10px auto;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.placeholderImage {
+		width: 100%;
+		height: 150px;
+		padding: 10px;
+		background-color: #eee;
 	}
 
 	.price {
@@ -91,6 +127,14 @@
 		font-weight: bold;
 		color: black;
 		margin-top: 5px;
+	}
+
+	#add-user {
+		padding: 10px 30px;
+		text-align: center;
+		font-weight: bold;
+		background-color: #000;
+		color: #fff;
 	}
 
 /* FOOTER */
