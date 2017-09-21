@@ -18,10 +18,10 @@ Ben Lacy, Brooks Rodriguez, and Marguerite Seifert
 * JavaScript/jQuery
 * Unite Gallery API
 * SPA construction
-* Google Calendar
 
 ##### **_Brooks_**
 * Firebase (sign-up page)
+* JavaScript/jQuery
 * Facebook API
 * Google Maps API
 * Video Player
