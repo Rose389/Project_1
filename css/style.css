@@ -13,6 +13,12 @@
 		color: #fff;
 	}
 
+	dl {
+		width: 90%;
+		max-width: 680px;
+		margin: auto;
+	}
+
 	/* 	I won't delete these so they don't cause a git issue but Bootstrap 3
 		has float classes (pull-left and pull-right) built in for future ref
 		-Ben  */
@@ -93,6 +99,12 @@
 
 	.caption {
 		text-align: center;
+		font-style: italic;
+	}
+
+	.demo-img {
+		margin: 10px;
+		border: 6px solid #000;
 	}
 
 	.panel{
@@ -108,6 +120,7 @@
 
 	.panel-body{
 		padding: 10px;
+
 	}
 
 	.placeholderImage {
