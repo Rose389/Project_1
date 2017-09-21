@@ -14,45 +14,29 @@
     </div>
     <div class="panel-body">
         <form role="form">
-            <div class="clearfix">
-                <div class="form-group float-left">
-                    <label for="name-input">Name:</label>
-                    <input class="form-control" id="name-input" type="text">
-                </div>
-                <div class="form-group float-left">
-                    <label for="email-input">Email:</label>
-                    <input class="form-control" id="email-input" type="email">
-                </div>
+            <div class="form-group">
+                <label for="name-input">Name:</label>
+                <input class="form-control" id="name-input" type="text">
             </div>
-            <div class="clearfix">
-                <div class="form-group float-left">
-                    <label for="student-input">Number of students:</label>
-                    <input class="form-control" id="student-input" type="number">
-                </div>
-                <div class="form-group float-left">
-                    <label for="student-input">Dance styles interested in:</label>
-                    <input class="form-control" id="styles" type="text">
-                </div>
+            <div class="form-group">
+                <label for="email-input">Email:</label>
+                <input class="form-control" id="email-input" type="email">
             </div>
-            <div class="clearfix">
-                <div class="form-group float-left">
-                    <label for="comment-input">How did you hear about us?</label>
-                    <textarea class="form-control" id="referral-input" rows="3"></textarea>
-                </div>
-                <div class="form-group float-left">
-                    <label for="comment-input">Any questions or feedback?</label>
-                    <textarea class="form-control" id="comment-input" rows="3"></textarea>
-                </div>
+            <div class="form-group">
+                <label for="age-input">Age:</label>
+                <input class="form-control" id="age-input" type="number">
             </div>
-            <div  class="clearfix">
-                <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+            <div class="form-group">
+                <label for="comment-input">How did you hear about us?</label>
+                <textarea class="form-control" id="comment-input" rows="5"></textarea>
             </div>
+            <button class="btn btn-primary" id="add-user" type="submit">Submit</button>
         </form>
     </div>
 </div>
 
 <script>
-var localName = '', localEmail = '', localStudent = 0, localStyles = '', localReferral = '', localComment = '';
+var localName = '', localEmail = '', localAge = 0, localComment = '';
 
 // Initialize Firebase
     var config = {
@@ -84,18 +68,14 @@ var localName = '', localEmail = '', localStudent = 0, localStyles = '', localRe
         // Capture user inputs and store them into variables
         localName = $("#name-input").val().trim();
         localEmail = $("#email-input").val().trim();
-        localStudent = $("#age-input").val().trim();
-        localStyles = $("#styles-input").val().trim();;
-        localReferral = $("#referral-input").val().trim();;
+        localAge = $("#age-input").val().trim();
         localComment = $("#comment-input").val().trim();
 
-        if (localName !== '' &&  localEmail !== '' &&  localStudent !== '' &&  localComment !== ''){
+        if (localName !== '' &&  localEmail !== '' &&  localAge !== '' &&  localComment !== ''){
             var newUser = {
                 serverName: localName,
                 serverEmail: localEmail,
-                serverStudent: localStudent,
-                serverStyles: localStyles,
-                serverReferral: localReferral,
+                serverAge: localAge,
                 serverComment: localComment
             };
             
@@ -107,9 +87,7 @@ var localName = '', localEmail = '', localStudent = 0, localStyles = '', localRe
             // Clears all of the text-boxes
             $("#name-input").val("");
             $("#email-input").val("");
-            $("#student-input").val("");
-            $("#styles-input").val().trim();
-            $("#referral-input").val().trim();
+            $("#age-input").val("");
             $("#comment-input").val("");
 
             $('#latest-name').text(localName);
