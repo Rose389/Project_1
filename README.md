@@ -6,7 +6,7 @@ Ben Lacy, Brooks Rodriguez, and Marguerite Seifert
 * Google Maps, Facebook, and Unite Gallery
 #### **_Technology Used:_**
 * HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, Firebase
-* _**(New)**_ -  jQuery .load() function to create a Single Page Application (SPA)
+* _**(New)**_ -  jQuery .load() function to create a pseudo Single Page Application (SPA)
 * _**(New)**_ -  Google Calendar plugin
 
 ---
